@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    background-color: rgb(240, 238, 231);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading{
+    font-size: 70px;
+    color: black;
+    animation: flicker 1.5s infinite alternate;
+}
+
+td{
+    color: white;
+    text-align: center;
+    width: 5vw; /* pixel(px) = (viewport with unit(vw) * viewport width)/100 */
+    border: 1px solid white;
+    font-weight: 700;
+    size: 12px;
+}
+
+.none{
+    border: none;
+}
+
+.color1{
+    background-color: #00b6bc;
+}
+
+.color2{
+    background-color: #1862cd;
+}
+
+.color3{
+    background-color: #a36d9f;
+}
+
+.color4{
+    background-color: #ff4d4d;
+}
+
+.color5{
+    background-color: #f9b552;
+}
+
+.color6{
+    background-color: #fc784a;
+}
+
+.color7{
+    background-color: #4ebc6b;
+}
+
+.color8{
+    background-color: #2a848e;
+}
+
+.color9{
+    background-color: #839698;
+}
+
+.color10{
+    background-color: #004976;
+}
+
+.color11{
+    background-color: #593456;
+}
+
+/* Flickering Animation */
+@keyframes flicker{
+    0%, 17%, 33%, 50%, 66%, 83%, 100%{
+        text-shadow:
+        0 0 10px #fff,
+        0 0 20px #0ff,
+        0 0 40px #0ff,
+        0 0 70px #0ff,
+        0 0 110px #0ff,
+        0 0 160px #0ff
+    }
+
+    20%, 40%, 60%, 80%{
+        text-shadow: none;
+    }
+}
+
+td:hover{
+    filter: brightness(200%);
+    color: black;
+}
